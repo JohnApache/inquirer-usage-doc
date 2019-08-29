@@ -233,14 +233,14 @@ separator 实例属性包含type字段，type为 ‘separator’， 这使得inq
 可选选项：default, filter
 注意：default 选项的值必须是 choices 在数组中对应的index， 或者对应的 choice value
 终端展示界面参考
-![list终端展示图片](./WX20190829-094145@2x.png, 'list终端展示图片')
+![list终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/1.png, 'list终端展示图片')
 
 + **rawlist**
 必填选项：type, name, message, choices
 可选选项：default, filter
 注意：default 选项的值必须是 choices 在数组中的 index.
 终端展示界面参考
-![rawlist终端展示图片](./WX20190829-095016@2x.png, 'rawlist终端展示图片')
+![rawlist终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/2.png, 'rawlist终端展示图片')
 
 + **expand**
 必填选项：type, name, message, choices
@@ -249,8 +249,8 @@ separator 实例属性包含type字段，type为 ‘separator’， 这使得inq
 1. default 选项的值必须是 choices 在数组中对应的index.如果没有提供 default 默认值，用户也没有选中任何选项直接enter时，默认会显示help 帮助信息，展示在终端界面所有选择选项
 2. expand 提供的 choice 选项,除了name, value 每一个对象必须提供额外的选项 key， key必须是单个字符，且为小写字符, 或者是单个数字, 且prompt 会默认提供 一个 “h” key 作为帮助选项，该 key 不应该被我们使用。
 终端展示界面参考
-![expand终端展示图片](./WX20190829-100329@2x.png, 'expand终端展示图片')
-![expand终端展示图片](./WX20190829-100355@2x.png, 'expand终端展示图片')
+![expand终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/3.png, 'expand终端展示图片')
+![expand终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/4.png, 'expand终端展示图片')
 
 + **checkbox**
 必填选项：type, name, message, choices
@@ -260,20 +260,20 @@ separator 实例属性包含type字段，type为 ‘separator’， 这使得inq
 2. choices 每一个选项，除了name, value ，还可以选择性提供一个 额外的参数 "checked"， 当标记为checked: true 的 choice 在终端界面中展示初始是默认选中的状态
 3.choises 还提供了一个 额外选项属性，"disabled", disabled 可以是 一个 Boolean值，当为true是 该选项 不可选择，且选项旁边会有标注(Disabled); disabled 也可以是一个 字符串，此时该选项被禁用，且 选项旁边的标注 替换为 disabled 字符串的值; disabled 还可以是一个函数，当为函数时，可以接收一个参数， 当前的answers 对象，并且函数的返回值 需要是一个String 或者 Boolean。
 终端展示界面参考
-![checkbox终端展示图片](./WX20190829-102303@2x.png, 'checkbox终端展示图片')
+![checkbox终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/5.png, 'checkbox终端展示图片')
 
 + **confirm**
 必填选项：type, name, message
 可选选项：default
 注意: default 值需要时一个 Boolean 类型的值
 终端展示界面参考
-![confirm终端展示图片](./WX20190829-102518@2x.png, 'confirm终端展示图片')
+![confirm终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/6.png, 'confirm终端展示图片')
 
 + **input**
 必填选项：type, name, message
 可选选项：default, filter, validate, transformer
 终端展示界面参考
-![input终端展示图片](./WX20190829-102622@2x.png, 'input终端展示图片')
+![input终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/7.png, 'input终端展示图片')
 
 + **number**
 必填选项：type, name, message
@@ -285,7 +285,7 @@ separator 实例属性包含type字段，type为 ‘separator’， 这使得inq
 可选选项：default, filter, validate
 注意：mask 是一个String值 该选项是用来隐藏用户真实输入, 在界面中展示的效果为 用户输入的任意单个 字符都会被替换成 mask 对应的string, 可以做掩码。 如果不传mask 或者mask为空时，终端界面就不会显示任何输出.
 终端展示界面参考
-![password终端展示图片](./WX20190829-103205@2x.png, 'password终端展示图片')
+![password终端展示图片](https://github.com/JohnApache/inquirer-usage-doc/blob/master/8.png, 'password终端展示图片')
 
 + **editor**
 必填选项：type, name, message
