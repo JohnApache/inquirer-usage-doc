@@ -11,7 +11,10 @@ const seperator = new inquirer.Separator('============');
                 return input.trim();
             },
             validate(input) {
-                return input.length > 0;
+                if(input.length === 0) {
+                    return '不能为空';
+                }
+                return true;
             },
             transformer(input) {
                 if(input.length > 0) {
@@ -34,8 +37,7 @@ const seperator = new inquirer.Separator('============');
             validate(input) {
                 let num = parseInt(input);
                 if(Number.isNaN(num) || num <= 0 || num >= 100) {
-                    console.log(input);
-                    return new Error('请输入合法的年龄');
+                    return '请输入合法的年龄';
                 }
                 return true;
             },
